@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lulopop Tea Co.</title>
+    <link rel="stylesheet" href="globals.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        /** @type {import('tailwindcss').Config} */
+        tailwind.config = {
+            corePlugins: {
+                preflight: false,
+            },
+            theme: {
+                extend: {},
+            },
+            plugins: [],
+        }
+    </script>
+</head>
+
+<body>
+    <div
+        class="flex flex-col items-start relative [background:linear-gradient(0deg,rgba(254,249,243,1)_0%,rgba(254,249,243,1)_100%),linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(255,255,255,1)_100%)] overflow-y-scroll">
+        <header
+            class="flex flex-col w-full items-start absolute top-0 left-0 bg-[#fef9f399] shadow-[0px_4px_30px_#00000008] backdrop-blur-md backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(12px)_brightness(100%)] z-10">
+            <div class="flex h-20 items-center justify-between px-16 py-0 relative self-stretch w-full">
+                <a href="#" class="inline-flex items-center gap-4 relative flex-[0_0_auto]" aria-label="Lulopop home">
+                    <span
+                        class="relative w-10 h-10 rounded-full shadow-[0px_0px_15px_#614da533] bg-[url(legacy:image:md5:2:555-no-children)] bg-cover bg-[50%_50%]"
+                        aria-hidden="true"></span>
+                    <span class="inline-flex flex-col items-start relative flex-[0_0_auto]">
+                        <span
+                            class="flex items-center [font-family:'Bricolage_Grotesque-SemiBold',Helvetica] font-semibold text-[#614da5] text-[32px] tracking-[-0.80px] leading-10 whitespace-nowrap relative w-fit mt-[-1.00px]">Lulopop</span>
+                    </span>
+                </a>
+                <nav class="inline-flex items-center gap-10 relative flex-[0_0_auto]" aria-label="Primary navigation">
+                    <a href="#shop" class="inline-flex flex-col items-start relative flex-[0_0_auto]">
+                        <span
+                            class="flex items-center [font-family:'Plus_Jakarta_Sans-SemiBold',Helvetica] font-semibold text-[#484551] text-base tracking-[0] leading-6 whitespace-nowrap relative w-fit mt-[-1.00px]">Shop</span>
+                    </a>
+                    <a href="#flavors" class="inline-flex flex-col items-start relative flex-[0_0_auto]"
+                        aria-current="page">
+                        <span
+                            class="flex items-center [font-family:'Plus_Jakarta_Sans-Bold',Helvetica] font-bold text-[#614da5] text-base tracking-[0] leading-6 whitespace-nowrap relative w-fit mt-[-1.00px]">Flavors</span>
+                    </a>
+                    <a href="#our-story" class="inline-flex flex-col items-start relative flex-[0_0_auto]">
+                        <span
+                            class="flex items-center [font-family:'Plus_Jakarta_Sans-SemiBold',Helvetica] font-semibold text-[#484551] text-base tracking-[0] leading-6 whitespace-nowrap relative w-fit mt-[-1.00px]">Our
+                            Story</span>
+                    </a>
+                </nav>
+                <div class="inline-flex items-center gap-6 relative flex-[0_0_auto]">
+                    <button type="button"
+                        class="all-unset box-border inline-flex flex-col items-center justify-center p-2 relative flex-[0_0_auto]"
+                        aria-label="Shopping bag, 0 items">
+                        <span class="inline-flex items-start justify-center relative flex-[0_0_auto]">
+                            <img class="relative w-[18.67px] h-[23.33px]" src="img/icon-3.svg" alt="">
+                        </span>
+                        <span
+                            class="w-5 h-5 justify-center pt-0.5 pb-[3px] px-0 absolute top-0 right-0 bg-[#4d6700] rounded-full flex items-center"
+                            aria-hidden="true">
+                            <span
+                                class="flex items-center justify-center [font-family:'Plus_Jakarta_Sans-Bold',Helvetica] font-bold text-white text-[10px] text-center tracking-[0] leading-[15px] whitespace-nowrap relative w-fit mt-[-1.00px]">0</span>
+                        </span>
+                    </button>
+                    <a href="#account"
+                        class="relative w-9 h-9 rounded-full border-2 border-solid border-[#ece7e2] bg-[url(legacy:image:md5:2:571-no-children)] bg-cover bg-[50%_50%]"
+                        aria-label="Account"></a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section
+                class="flex flex-col items-start pt-20 pb-0 px-0 relative self-stretch w-full flex-[0_0_auto] bg-[#fef9f3]"
+                aria-labelledby="hero-heading">
+                <div class="flex flex-col items-start relative self-stretch w-full flex-[0_0_auto]">
+                    <div
+                        class="flex flex-col items-center justify-center pt-16 pb-[120px] px-16 relative self-stretch w-full flex-[0_0_auto]">
+                        <div class="absolute w-full h-full top-0 left-0" aria-hidden="true">
+                            <div
+                                class="absolute top-10 left-10 w-[512px] h-[512px] bg-[#ffdad64c] rounded-full blur-2xl mix-blend-multiply">
+                            </div>
+                            <div
+                                class="right-10 bottom-10 w-[640px] h-[640px] bg-[#e7deff4c] blur-[50px] mix-blend-multiply absolute rounded-full">
+                            </div>
+                        </div>
+                        <div class="inline-flex flex-col max-w-4xl items-center gap-8 relative flex-[0_0_auto]">
+                            <div
+                                class="inline-flex items-center gap-2 px-4 py-2 relative flex-[0_0_auto] bg-[#ece7e2] rounded-full shadow-[0px_1px_2px_#0000000d]">
+                                <span class="inline-flex flex-col items-center relative flex-[0_0_auto]">
+                                    <img class="relative w-[18.33px] h-[18.33px]" src="img/icon-4.svg" alt="">
+                                </span>
+                                <span
+                                    class="flex items-center justify-center [font-family:'Plus_Jakarta_Sans-Bold',Helvetica] font-bold text-[#484551] text-sm text-center tracking-[1.40px] leading-5 whitespace-nowrap relative w-fit mt-[-1.00px]">SINCE
+                                    2024</span>
+                            </div>
+                            <h1 id="hero-heading"
+                                class="relative w-fit [font-family:'Bricolage_Grotesque-ExtraBold',Helvetica] font-normal text-transparent text-7xl text-center tracking-[-1.44px] leading-[80px] whitespace-nowrap">
+                                <span class="font-extrabold text-[#1d1b18] tracking-[-1.04px]">Sip some </span><span
+                                    class="font-extrabold text-[#614da5] tracking-[-1.04px]">sunshine</span><span
+                                    class="font-extrabold text-[#1d1b18] tracking-[-1.04px]">.</span>
+                            </h1>
+                            <div
+                                class="inline-flex flex-col max-w-2xl items-center px-[0.27px] py-0 relative flex-[0_0_auto]">
+                                <p
+                                    class="relative w-fit mt-[-1.00px] [font-family:'Plus_Jakarta_Sans-Regular',Helvetica] font-normal text-[#484551] text-lg text-center tracking-[0] leading-7">
+                                    We started Lulopop with a simple idea: boba tea shouldn&#39;t just taste good,
+                                    it<br>should make you smile. Every cup is crafted with real ingredients, vibrant
+                                    flavors,<br>and a little bit of magic.
+                                </p>
+                            </div>
+                            <figure
+                                class="flex flex-col max-w-lg w-[512px] items-start pt-8 pb-0 px-0 relative flex-[0_0_auto]">
+                                <div
+                                    class="flex flex-col max-w-lg items-start justify-center relative w-full flex-[0_0_auto] bg-[#ffffff01] rounded-[48px] overflow-hidden shadow-[0px_25px_50px_-12px_#00000040] aspect-[1]">
+                                    <div class="relative self-stretch w-full h-[512px] bg-[url(legacy:image:md5:2:426-no-children)] bg-cover bg-[50%_50%]"
+                                        role="img" aria-label="Strawberry Pop boba tea character"></div>
+                                    <div class="absolute w-full h-full top-0 left-0 [background:linear-gradient(0deg,rgba(0,0,0,0.2)_0%,rgba(0,0,0,0)_100%)]"
+                                        aria-hidden="true"></div>
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="our-story"
+                class="flex flex-col items-start px-0 py-[120px] relative self-stretch w-full flex-[0_0_auto] bg-[#f8f3ed]"
+                aria-labelledby="companion-heading">
+                <div
+                    class="flex max-w-screen-xl items-center justify-center gap-6 px-16 py-0 relative w-full flex-[0_0_auto]">
+                    <div class="flex flex-col items-start gap-8 pl-0 pr-12 py-0 relative flex-1 grow">
+                        <div class="flex-col items-start self-stretch w-full flex-[0_0_auto] flex relative">
+                            <h2 id="companion-heading"
+                                class="relative self-stretch mt-[-1.00px] [font-family:'Bricolage_Grotesque-Bold',Helvetica] font-bold text-[#1d1b18] text-5xl tracking-[0] leading-[56px]">
+                                More than just a<br>drink. A daily<br>companion.</h2>
+                        </div>
+                        <div class="flex flex-col items-start gap-6 relative self-stretch w-full flex-[0_0_auto]">
+                            <article class="flex items-start gap-4 relative self-stretch w-full flex-[0_0_auto]">
+                                <div
+                                    class="flex w-12 h-12 items-center justify-center relative bg-[#ccf078] rounded-full shadow-[0px_1px_2px_#0000000d]">
+                                    <span class="inline-flex flex-col items-start relative flex-[0_0_auto]">
+                                        <img class="relative w-[17px] h-[16.99px]" src="img/image.svg" alt="">
+                                    </span>
+                                </div>
+                                <div class="inline-flex flex-col items-start gap-2 relative flex-[0_0_auto]">
+                                    <h3
+                                        class="flex items-center [font-family:'Plus_Jakarta_Sans-SemiBold',Helvetica] font-semibold text-[#1d1b18] text-base tracking-[0] leading-6 whitespace-nowrap relative w-fit mt-[-1.00px]">
+                                        Real Ingredients</h3>
+                                    <p
+                                        class="[font-family:'Plus_Jakarta_Sans-Regular',Helvetica] font-normal text-[#484551] text-base tracking-[0] leading-6 relative w-fit mt-[-1.00px]">
+                                        We source premium tea leaves and fresh fruit. No artificial<br>syrups, just
+                                        pure, vibrant flavors.</p>
+                                </div>
+                            </article>
+                            <article class="flex items-start gap-4 relative self-stretch w-full flex-[0_0_auto]">
+                                <div
+                                    class="flex w-12 h-12 items-center justify-center relative bg-[#c7a938] rounded-full shadow-[0px_1px_2px_#0000000d]">
+                                    <span class="inline-flex flex-col items-start relative flex-[0_0_auto]">
+                                        <img class="relative w-5 h-5" src="img/icon-2.svg" alt="">
+                                    </span>
+                                </div>
+                                <div class="inline-flex flex-col items-start gap-2 relative flex-[0_0_auto]">
+                                    <h3
+                                        class="flex items-center [font-family:'Plus_Jakarta_Sans-SemiBold',Helvetica] font-semibold text-[#1d1b18] text-base tracking-[0] leading-6 whitespace-nowrap relative w-fit mt-[-1.00px]">
+                                        Joy in Every Drop</h3>
+                                    <p
+                                        class="[font-family:'Plus_Jakarta_Sans-Regular',Helvetica] font-normal text-[#484551] text-base tracking-[0] leading-6 relative w-fit mt-[-1.00px]">
+                                        Our signature boba characters are designed to bring a pop<br>of joy and
+                                        playfulness to your routine.</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <figure
+                        class="rounded-[48px] shadow-[0px_8px_10px_-6px_#0000001a,0px_20px_25px_-5px_#0000001a] aspect-[0.8] flex flex-col items-start justify-center relative flex-1 grow bg-[#ffffff01] overflow-hidden">
+                        <div class="relative self-stretch w-full h-[705px] bg-[url(legacy:image:md5:2:453-no-children)] bg-cover bg-[50%_50%]"
+                            role="img" aria-label="Matcha Breeze boba tea character"></div>
+                        <figcaption
+                            class="flex flex-col w-full items-start p-8 absolute left-0 bottom-0 backdrop-blur-[2px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(2px)_brightness(100%)] [background:linear-gradient(0deg,rgba(50,48,44,0.8)_0%,rgba(50,48,44,0)_100%)]">
+                            <span class="flex flex-col items-start relative self-stretch w-full flex-[0_0_auto]">
+                                <span
+                                    class="relative flex items-center self-stretch mt-[-1.00px] [font-family:'Bricolage_Grotesque-SemiBold',Helvetica] font-semibold text-[#f5f0ea] text-[32px] tracking-[0] leading-10">Matcha
+                                    Breeze</span>
+                            </span>
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
+            <section id="flavors"
+                class="flex flex-col items-start px-16 py-[120px] relative self-stretch w-full flex-[0_0_auto]"
+                aria-labelledby="design-heading">
+                <div
+                    class="flex flex-col max-w-screen-xl items-start relative w-full flex-[0_0_auto] bg-[#7a67c0] rounded-[64px] overflow-hidden shadow-[0px_8px_10px_-6px_#0000001a,0px_20px_25px_-5px_#0000001a]">
+                    <img class="absolute w-full h-full top-0 left-0 mix-blend-overlay" src="img/image.png" alt=""
+                        aria-hidden="true">
+                    <div
+                        class="flex items-center justify-center gap-12 p-16 relative self-stretch w-full flex-[0_0_auto]">
+                        <div class="flex flex-col items-start gap-6 relative flex-1 grow">
+                            <div
+                                class="inline-flex items-center px-4 py-2 relative flex-[0_0_auto] bg-[#fffbff1a] rounded-full border border-solid border-[#fffbff33] backdrop-blur-[6px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(6px)_brightness(100%)]">
+                                <span class="inline-flex flex-col items-start relative flex-[0_0_auto]">
+                                    <span
+                                        class="flex items-center [font-family:'Plus_Jakarta_Sans-Bold',Helvetica] font-bold text-[#fffbff] text-sm tracking-[1.40px] leading-5 whitespace-nowrap relative w-fit mt-[-1.00px]">THE
+                                        DESIGN PROCESS</span>
+                                </span>
+                            </div>
+                            <div class="items-start flex flex-col relative self-stretch w-full flex-[0_0_auto]">
+                                <h2 id="design-heading"
+                                    class="relative self-stretch mt-[-1.00px] [font-family:'Bricolage_Grotesque-Bold',Helvetica] font-bold text-[#fffbff] text-5xl tracking-[0] leading-[56px]">
+                                    Crafted with<br>Character</h2>
+                            </div>
+                            <div
+                                class="flex flex-col max-w-md w-[448px] items-start relative flex-[0_0_auto] opacity-90">
+                                <p
+                                    class="[font-family:'Plus_Jakarta_Sans-Regular',Helvetica] font-normal text-[#fffbff] text-lg tracking-[0] leading-7 relative w-fit mt-[-1.00px]">
+                                    Each flavor profile is paired with a bespoke<br>character. From the energetic
+                                    Strawberry Pop to the<br>serene Taro Dream, we craft personalities that match<br>the
+                                    tasting notes of our premium blends.</p>
+                            </div>
+                            <div class="inline-flex flex-col items-start pt-4 pb-0 px-0 relative flex-[0_0_auto]">
+                                <a href="#characters"
+                                    class="inline-flex items-center justify-center gap-2 px-8 py-4 relative flex-[0_0_auto] bg-[#fffbff] rounded-full">
+                                    <span
+                                        class="absolute w-full h-full top-0 left-0 bg-[#ffffff01] rounded-full shadow-[0px_2px_4px_-2px_#0000001a,0px_4px_6px_-1px_#0000001a]"
+                                        aria-hidden="true"></span>
+                                    <span
+                                        class="flex items-center justify-center [font-family:'Plus_Jakarta_Sans-SemiBold',Helvetica] font-semibold text-[#7a67c0] text-base text-center tracking-[0] leading-6 whitespace-nowrap relative w-fit mt-[-1.00px]">Meet
+                                        the Characters</span>
+                                    <span class="inline-flex flex-col items-start relative flex-[0_0_auto]">
+                                        <img class="relative w-4 h-4" src="img/icon-5.svg" alt="">
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <figure
+                            class="rounded-[32px] shadow-[0px_25px_50px_-12px_#00000040] aspect-[1.33] flex flex-col items-start justify-center relative flex-1 grow bg-[#ffffff01] overflow-hidden">
+                            <div class="relative self-stretch w-full h-[366px] bg-[url(legacy:image:md5:2:476-no-children)] bg-cover bg-[50%_50%]"
+                                role="img" aria-label="Lulopop character illustration"></div>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+            <section id="shop"
+                class="flex flex-col items-start px-0 py-[120px] relative self-stretch w-full flex-[0_0_auto] bg-[#fef9f3]"
+                aria-labelledby="promise-heading">
+                <div
+                    class="flex flex-col max-w-screen-xl items-start gap-16 px-16 py-0 relative w-full flex-[0_0_auto]">
+                    <div class="items-center flex flex-col relative self-stretch w-full flex-[0_0_auto]">
+                        <h2 id="promise-heading"
+                            class="flex items-center justify-center [font-family:'Bricolage_Grotesque-Bold',Helvetica] font-bold text-[#1d1b18] text-5xl text-center tracking-[0] leading-[56px] whitespace-nowrap relative w-fit mt-[-1.00px]">
+                            The Lulopop Promise</h2>
+                    </div>
+                    <div class="flex items-start justify-center gap-8 relative self-stretch w-full flex-[0_0_auto]">
+                        <article
+                            class="flex-col w-[362.66px] gap-6 p-8 relative bg-[#f2ede7] rounded-3xl shadow-[0px_1px_2px_#0000000d] flex items-center">
+                            <div class="flex w-24 h-24 items-center justify-center relative bg-[#ffdad6] rounded-full">
+                                <span class="inline-flex flex-col items-center relative flex-[0_0_auto]">
+                                    <img class="relative w-9 h-9" src="img/icon-8.svg" alt="">
+                                </span>
+                            </div>
+                            <h3
+                                class="items-center justify-center w-fit [font-family:'Bricolage_Grotesque-SemiBold',Helvetica] font-semibold text-[#1d1b18] text-[32px] text-center tracking-[0] leading-10 whitespace-nowrap flex relative">
+                                Premium Tea</h3>
+                            <div
+                                class="inline-flex flex-col items-center pl-[19.17px] pr-[19.18px] py-0 relative flex-[0_0_auto]">
+                                <p
+                                    class="[font-family:'Plus_Jakarta_Sans-Regular',Helvetica] font-normal text-[#484551] text-base text-center tracking-[0] leading-6 relative w-fit mt-[-1.00px]">
+                                    Sourced directly from sustainable<br>farms to ensure a robust, authentic<br>base for
+                                    every drink.</p>
+                            </div>
+                        </article>
+                        <article
+                            class="flex flex-col w-[362.67px] items-center gap-6 p-8 relative bg-[#f2ede7] rounded-3xl shadow-[0px_1px_2px_#0000000d]">
+                            <div class="w-24 h-24 justify-center relative bg-[#ccf078] rounded-full flex items-center">
+                                <span class="inline-flex flex-col items-center relative flex-[0_0_auto]">
+                                    <img class="relative w-7 h-10" src="img/icon-7.svg" alt="">
+                                </span>
+                            </div>
+                            <h3
+                                class="items-center justify-center w-fit [font-family:'Bricolage_Grotesque-SemiBold',Helvetica] font-semibold text-[#1d1b18] text-[32px] text-center tracking-[0] leading-10 whitespace-nowrap flex relative">
+                                Real Fruit</h3>
+                            <div
+                                class="inline-flex flex-col items-center pl-[17.07px] pr-[17.08px] py-0 relative flex-[0_0_auto]">
+                                <p
+                                    class="[font-family:'Plus_Jakarta_Sans-Regular',Helvetica] font-normal text-[#484551] text-base text-center tracking-[0] leading-6 relative w-fit mt-[-1.00px]">
+                                    We blend real fruit purees and fresh<br>chunks, never artificial powders or<br>heavy
+                                    syrups.</p>
+                            </div>
+                        </article>
+                        <article
+                            class="flex-col w-[362.66px] gap-6 p-8 relative bg-[#f2ede7] rounded-3xl shadow-[0px_1px_2px_#0000000d] flex items-center">
+                            <div class="w-24 h-24 justify-center relative bg-[#c7a938] rounded-full flex items-center">
+                                <span class="inline-flex flex-col items-center relative flex-[0_0_auto]">
+                                    <img class="relative w-[43.1px] h-[41px]" src="img/icon.svg" alt="">
+                                </span>
+                            </div>
+                            <h3
+                                class="items-center justify-center w-fit [font-family:'Bricolage_Grotesque-SemiBold',Helvetica] font-semibold text-[#1d1b18] text-[32px] text-center tracking-[0] leading-10 whitespace-nowrap flex relative">
+                                Playful Vibes</h3>
+                            <div class="inline-flex flex-col items-center px-[1.61px] py-0 relative flex-[0_0_auto]">
+                                <p
+                                    class="[font-family:'Plus_Jakarta_Sans-Regular',Helvetica] font-normal text-[#484551] text-base text-center tracking-[0] leading-6 relative w-fit mt-[-1.00px]">
+                                    Because life is too short for boring<br>beverages. We believe every sip should<br>be
+                                    a celebration.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <section
+                class="pt-[120px] pb-[200px] px-32 self-stretch flex flex-col items-start relative w-full flex-[0_0_auto]"
+                aria-labelledby="location-heading">
+                <div
+                    class="max-w-screen-lg p-24 bg-[#e6e2dc] rounded-[64px] overflow-hidden border border-solid border-[#cac4d34c] shadow-[0px_4px_6px_-4px_#0000001a,0px_10px_15px_-3px_#0000001a] flex flex-col items-start relative w-full flex-[0_0_auto]">
+                    <div class="top-[-95px] left-[-95px] w-64 h-64 bg-[#614da533] blur-[25px] absolute rounded-full"
+                        aria-hidden="true"></div>
+                    <div class="right-[-95px] bottom-[-95px] w-64 h-64 bg-[#4d670033] blur-[25px] absolute rounded-full"
+                        aria-hidden="true"></div>
+                    <div class="flex flex-col items-center gap-8 relative self-stretch w-full flex-[0_0_auto]">
+                        <h2 id="location-heading"
+                            class="relative w-fit mt-[-1.00px] [font-family:'Bricolage_Grotesque-ExtraBold',Helvetica] font-extrabold text-transparent text-7xl text-center tracking-[-1.44px] leading-[80px] whitespace-nowrap">
+                            <span class="text-[#484551] tracking-[-1.04px]">Ready for a </span><span
+                                class="text-[#614da5] tracking-[-1.04px]">pop</span><span
+                                class="text-[#484551] tracking-[-1.04px]"> of joy?</span>
+                        </h2>
+                        <div
+                            class="inline-flex flex-col max-w-xl items-center pl-[11.09px] pr-[11.11px] py-0 relative flex-[0_0_auto]">
+                            <p
+                                class="relative w-fit mt-[-1.00px] [font-family:'Plus_Jakarta_Sans-Regular',Helvetica] font-normal text-[#484551] text-lg text-center tracking-[0] leading-7">
+                                Find your nearest Lulopop location and discover your new favorite<br>character companion
+                                today.</p>
+                        </div>
+                        <a href="#locations"
+                            class="all-unset box-border inline-flex items-center gap-[11.99px] px-10 py-5 relative flex-[0_0_auto] bg-[#614da5] rounded-full shadow-[0px_8px_30px_#614da54c]">
+                            <span class="inline-flex flex-col items-center relative flex-[0_0_auto]">
+                                <img class="relative w-4 h-5" src="img/icon-6.svg" alt="">
+                            </span>
+                            <span
+                                class="flex items-center justify-center [font-family:'Plus_Jakarta_Sans-SemiBold',Helvetica] font-semibold text-white text-base text-center tracking-[0] leading-6 whitespace-nowrap relative w-fit mt-[-1.00px]">Find
+                                a Location</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer
+            class="flex flex-col items-start gap-16 px-0 py-[120px] relative self-stretch w-full flex-[0_0_auto] bg-white border-t [border-top-style:solid] [border-right-style:none] [border-bottom-style:none] [border-left-style:none] border-[#e6e2dc4c]">
+            <div class="grid grid-cols-4 grid-rows-[136px] max-w-screen-xl h-fit gap-6 px-16 py-0">
+                <div class="relative row-[1_/_2] col-[1_/_3] w-full h-fit flex flex-col items-start gap-6">
+                    <a href="#" class="flex items-center gap-3 relative self-stretch w-full flex-[0_0_auto]"
+                        aria-label="Lulopop home">
+                        <span
+                            class="relative max-w-[564px] w-8 h-8 rounded-full bg-[url(legacy:image:md5:2:519-no-children)] bg-cover bg-[50%_50%]"
+                            aria-hidden="true"></span>
+                        <span class="inline-flex flex-col items-start relative flex-[0_0_auto]">
+                            <span
+                                class="flex items-center [font-family:'Bricolage_Grotesque-SemiBold',Helvetica] font-semibold text-[#614da5] text-[32px] tracking-[0] leading-10 whitespace-nowrap relative w-fit mt-[-1.00px]">Lulopop</span>
+                        </span>
+                    </a>
+                    <div class="flex flex-col max-w-sm w-96 items-start relative flex-[0_0_auto]">
+                        <p
+                            class="[font-family:'Plus_Jakarta_Sans-Regular',Helvetica] font-normal text-[#484551] text-base tracking-[0] leading-6 relative w-fit mt-[-1.00px]">
+                            Sip some sunshine. Our handcrafted boba brings a<br>pop of joy to your daily routine with
+                            fresh<br>ingredients and vibrant flavors.</p>
+                    </div>
+                </div>
+                <nav class="relative row-[1_/_2] col-[3_/_4] w-full h-fit flex flex-col items-start gap-4 pt-0 pb-3 px-0"
+                    aria-label="Footer navigation">
+                    <div class="flex-col items-start self-stretch w-full flex-[0_0_auto] flex relative">
+                        <h2
+                            class="relative flex items-center self-stretch mt-[-1.00px] [font-family:'Plus_Jakarta_Sans-Bold',Helvetica] font-bold text-[#1d1b18] text-sm tracking-[1.40px] leading-5">
+                            QUICK LINKS</h2>
+                    </div>
+                    <div class="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
+                        <a href="#shop" class="flex self-stretch w-full flex-col items-start relative flex-[0_0_auto]">
+                            <span
+                                class="relative flex items-center self-stretch mt-[-1.00px] [font-family:'Plus_Jakarta_Sans-Regular',Helvetica] font-normal text-[#484551] text-base tracking-[0] leading-6">Shop
+                                All</span>
+                        </a>
+                        <a href="#gifts" class="flex self-stretch w-full flex-col items-start relative flex-[0_0_auto]">
+                            <span
+                                class="relative flex items-center self-stretch mt-[-1.00px] [font-family:'Plus_Jakarta_Sans-Regular',Helvetica] font-normal text-[#484551] text-base tracking-[0] leading-6">Gifts</span>
+                        </a>
+                        <a href="#locations"
+                            class="flex self-stretch w-full flex-col items-start relative flex-[0_0_auto]">
+                            <span
+                                class="relative flex items-center self-stretch mt-[-1.00px] [font-family:'Plus_Jakarta_Sans-Regular',Helvetica] font-normal text-[#484551] text-base tracking-[0] leading-6">Locations</span>
+                        </a>
+                    </div>
+                </nav>
+                <section
+                    class="relative row-[1_/_2] col-[4_/_5] w-full h-fit flex flex-col items-start gap-4 pt-0 pb-[76px] px-0"
+                    aria-labelledby="connect-heading">
+                    <div class="flex flex-col items-start relative self-stretch w-full flex-[0_0_auto]">
+                        <h2 id="connect-heading"
+                            class="relative flex items-center self-stretch mt-[-1.00px] [font-family:'Plus_Jakarta_Sans-Bold',Helvetica] font-bold text-[#1d1b18] text-sm tracking-[1.40px] leading-5">
+                            CONNECT</h2>
+                    </div>
+                    <img class="relative self-stretch w-full flex-[0_0_auto] object-cover" src="img/container.svg"
+                        alt="Lulopop social media links">
+                </section>
+            </div>
+            <div
+                class="flex max-w-screen-xl items-center justify-between pt-8 pb-0 px-16 relative w-full flex-[0_0_auto] border-t [border-top-style:solid] border-[#e6e2dc33]">
+                <div class="inline-flex flex-col items-start relative flex-[0_0_auto]">
+                    <p
+                        class="flex items-center [font-family:'Plus_Jakarta_Sans-Regular',Helvetica] font-normal text-[#484551] text-sm tracking-[0] leading-5 whitespace-nowrap relative w-fit mt-[-1.00px]">
+                        © 2024 Lulopop Tea Co. All rights reserved.</p>
+                </div>
+                <nav class="inline-flex items-start gap-8 relative flex-[0_0_auto]" aria-label="Legal navigation">
+                    <a href="#privacy" class="inline-flex flex-col items-start relative self-stretch flex-[0_0_auto]">
+                        <span
+                            class="flex items-center [font-family:'Plus_Jakarta_Sans-Regular',Helvetica] font-normal text-[#484551] text-sm tracking-[0] leading-5 whitespace-nowrap relative w-fit mt-[-1.00px]">Privacy
+                            Policy</span>
+                    </a>
+                    <a href="#terms" class="inline-flex flex-col items-start relative self-stretch flex-[0_0_auto]">
+                        <span
+                            class="flex items-center [font-family:'Plus_Jakarta_Sans-Regular',Helvetica] font-normal text-[#484551] text-sm tracking-[0] leading-5 whitespace-nowrap relative w-fit mt-[-1.00px]">Terms
+                            of Service</span>
+                    </a>
+                </nav>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
