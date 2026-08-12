@@ -46,7 +46,7 @@
                                 <input type="radio" name="fulfillment_type" value="pickup" class="hidden" {{ old('fulfillment_type', 'pickup') === 'pickup' ? 'checked' : '' }}
                                        onchange="document.getElementById('pickup-fields').classList.remove('hidden'); document.getElementById('delivery-fields').classList.add('hidden');">
                                 <span class="flex flex-col items-center gap-1 w-full">
-                                    <span class="text-xl">🏪</span>
+                                    <x-icon name="store" class="w-6 h-6 text-lavender-500" />
                                     <span class="font-semibold text-sm">Store Pickup</span>
                                     <span class="text-xs text-gray-400">Free</span>
                                 </span>
@@ -55,7 +55,7 @@
                                 <input type="radio" name="fulfillment_type" value="delivery" class="hidden" {{ old('fulfillment_type') === 'delivery' ? 'checked' : '' }}
                                        onchange="document.getElementById('delivery-fields').classList.remove('hidden'); document.getElementById('pickup-fields').classList.add('hidden');">
                                 <span class="flex flex-col items-center gap-1 w-full">
-                                    <span class="text-xl">🚗</span>
+                                    <x-icon name="car" class="w-6 h-6 text-lavender-500" />
                                     <span class="font-semibold text-sm">Local Delivery</span>
                                     <span class="text-xs text-gray-400">$3.99</span>
                                 </span>
@@ -82,7 +82,9 @@
                         <div class="space-y-3">
                             <label class="flex items-center gap-3 p-3 rounded-xl border-2 border-cream-200 cursor-pointer has-[:checked]:border-lavender-500 has-[:checked]:bg-lavender-50 transition-all">
                                 <input type="radio" name="payment_method" value="card" {{ old('payment_method', 'card') === 'card' ? 'checked' : '' }} class="hidden">
-                                <span class="w-10 h-10 rounded-lg bg-blue-50 flex items-center justify-center text-lg">💳</span>
+                                <span class="w-10 h-10 rounded-lg bg-blue-50 flex items-center justify-center">
+                                    <x-icon name="card" class="w-5 h-5 text-blue-500" />
+                                </span>
                                 <div>
                                     <p class="font-semibold text-sm">Credit / Debit Card</p>
                                     <p class="text-xs text-gray-400">Visa, Mastercard, AMEX</p>
@@ -90,7 +92,9 @@
                             </label>
                             <label class="flex items-center gap-3 p-3 rounded-xl border-2 border-cream-200 cursor-pointer has-[:checked]:border-lavender-500 has-[:checked]:bg-lavender-50 transition-all">
                                 <input type="radio" name="payment_method" value="apple_pay" {{ old('payment_method') === 'apple_pay' ? 'checked' : '' }} class="hidden">
-                                <span class="w-10 h-10 rounded-lg bg-gray-50 flex items-center justify-center text-lg">🍎</span>
+                                <span class="w-10 h-10 rounded-lg bg-gray-50 flex items-center justify-center">
+                                    <x-icon name="apple-pay" class="w-5 h-5 text-gray-800" />
+                                </span>
                                 <div>
                                     <p class="font-semibold text-sm">Apple Pay</p>
                                     <p class="text-xs text-gray-400">Express checkout</p>
@@ -98,7 +102,9 @@
                             </label>
                             <label class="flex items-center gap-3 p-3 rounded-xl border-2 border-cream-200 cursor-pointer has-[:checked]:border-lavender-500 has-[:checked]:bg-lavender-50 transition-all">
                                 <input type="radio" name="payment_method" value="google_pay" {{ old('payment_method') === 'google_pay' ? 'checked' : '' }} class="hidden">
-                                <span class="w-10 h-10 rounded-lg bg-green-50 flex items-center justify-center text-lg">🟢</span>
+                                <span class="w-10 h-10 rounded-lg bg-green-50 flex items-center justify-center">
+                                    <x-icon name="google-pay" class="w-5 h-5 text-green-600" />
+                                </span>
                                 <div>
                                     <p class="font-semibold text-sm">Google Pay</p>
                                     <p class="text-xs text-gray-400">Express checkout</p>

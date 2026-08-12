@@ -11,13 +11,13 @@
                 All
             </a>
             <a href="{{ route('admin.activity', ['type' => 'order']) }}" class="px-3 py-1.5 rounded-lg text-xs font-semibold transition-colors {{ $type === 'order' ? 'bg-lavender-500 text-white' : 'bg-gray-100 text-gray-600 hover:bg-gray-200' }}">
-                📋 Orders
+                Orders
             </a>
             <a href="{{ route('admin.activity', ['type' => 'stock']) }}" class="px-3 py-1.5 rounded-lg text-xs font-semibold transition-colors {{ $type === 'stock' ? 'bg-lavender-500 text-white' : 'bg-gray-100 text-gray-600 hover:bg-gray-200' }}">
-                📦 Stock
+                Stock
             </a>
             <a href="{{ route('admin.activity', ['type' => 'system']) }}" class="px-3 py-1.5 rounded-lg text-xs font-semibold transition-colors {{ $type === 'system' ? 'bg-lavender-500 text-white' : 'bg-gray-100 text-gray-600 hover:bg-gray-200' }}">
-                ⚙️ System
+                System
             </a>
         </div>
     </div>
@@ -27,9 +27,10 @@
         <div class="divide-y divide-gray-50">
             @forelse($logs as $log)
                 <div class="p-5 flex gap-4 hover:bg-gray-50/50 transition-colors">
-                    <div class="w-10 h-10 rounded-xl flex-shrink-0 flex items-center justify-center text-lg
+                    <div class="w-10 h-10 rounded-xl flex-shrink-0 flex items-center justify-center
                         {{ $log->type === 'order' ? 'bg-lavender-50' : ($log->type === 'stock' ? 'bg-amber-50' : 'bg-gray-50') }}">
-                        {{ $log->type === 'order' ? '📋' : ($log->type === 'stock' ? '📦' : '⚙️') }}
+                        <x-icon :name="$log->type === 'order' ? 'clipboard' : ($log->type === 'stock' ? 'box' : 'gear')"
+                                class="w-5 h-5 {{ $log->type === 'order' ? 'text-lavender-500' : ($log->type === 'stock' ? 'text-amber-500' : 'text-gray-500') }}" />
                     </div>
                     <div class="flex-1 min-w-0">
                         <div class="flex items-start justify-between gap-4">
@@ -48,7 +49,9 @@
                 </div>
             @empty
                 <div class="p-16 text-center">
-                    <span class="text-4xl block mb-3">📝</span>
+                    <div class="w-14 h-14 rounded-xl bg-lavender-50 flex items-center justify-center mx-auto mb-3">
+                        <x-icon name="clipboard" class="w-7 h-7 text-lavender-400" />
+                    </div>
                     <p class="text-gray-500">No activity logged yet.</p>
                 </div>
             @endforelse

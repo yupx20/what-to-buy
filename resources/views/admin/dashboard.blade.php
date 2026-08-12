@@ -98,9 +98,9 @@
                 <div class="p-5 space-y-4 max-h-96 overflow-y-auto">
                     @forelse($recentActivity as $log)
                         <div class="flex gap-3">
-                            <div class="w-8 h-8 rounded-lg flex-shrink-0 flex items-center justify-center text-sm
+                            <div class="w-8 h-8 rounded-lg flex-shrink-0 flex items-center justify-center
                                 {{ $log->type === 'order' ? 'bg-lavender-50 text-lavender-600' : ($log->type === 'stock' ? 'bg-amber-50 text-amber-600' : 'bg-gray-50 text-gray-600') }}">
-                                {{ $log->type === 'order' ? '📋' : ($log->type === 'stock' ? '📦' : '⚙️') }}
+                                <x-icon :name="$log->type === 'order' ? 'clipboard' : ($log->type === 'stock' ? 'box' : 'gear')" class="w-4 h-4" />
                             </div>
                             <div class="flex-1 min-w-0">
                                 <p class="text-sm font-semibold text-gray-900 truncate">{{ $log->title }}</p>

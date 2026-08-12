@@ -39,7 +39,9 @@
                 <div class="divide-y divide-gray-50">
                     @foreach($order->items as $item)
                         <div class="p-5 flex items-start gap-4">
-                            <div class="w-12 h-12 rounded-xl bg-lavender-50 flex items-center justify-center text-2xl flex-shrink-0">🧋</div>
+                            <div class="w-12 h-12 rounded-xl bg-lavender-50 flex items-center justify-center flex-shrink-0">
+                                <x-icon name="boba" class="w-6 h-6 text-lavender-400" />
+                            </div>
                             <div class="flex-1">
                                 <div class="flex items-start justify-between">
                                     <div>
@@ -96,7 +98,13 @@
                 <div class="space-y-3 text-sm">
                     <div>
                         <span class="text-gray-400 text-xs">Type</span>
-                        <p class="font-semibold capitalize">{{ $order->fulfillment_type === 'delivery' ? '🚗 Delivery' : '🏪 Store Pickup' }}</p>
+                        <p class="font-semibold capitalize">
+                            @if($order->fulfillment_type === 'delivery')
+                                <x-icon name="car" class="w-4 h-4 inline" /> Delivery
+                            @else
+                                <x-icon name="store" class="w-4 h-4 inline" /> Store Pickup
+                            @endif
+                        </p>
                     </div>
                     @if($order->delivery_address)
                         <div><span class="text-gray-400 text-xs">Address</span><p class="font-semibold">{{ $order->delivery_address }}</p></div>

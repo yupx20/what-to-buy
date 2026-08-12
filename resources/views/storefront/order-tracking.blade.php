@@ -8,7 +8,9 @@
         {{-- Success Banner --}}
         @if(session('success'))
             <div class="bg-matcha-50 border border-matcha-200 rounded-2xl p-6 mb-8 text-center animate-slide-up">
-                <span class="text-4xl block mb-3">🎉</span>
+                <div class="mx-auto w-12 h-12 rounded-full bg-matcha-100 flex items-center justify-center mb-3">
+                    <x-icon name="check-circle" class="w-7 h-7 text-matcha-500" />
+                </div>
                 <h2 class="font-display font-bold text-xl text-matcha-700 mb-1">Order Confirmed!</h2>
                 <p class="text-sm text-matcha-600">{{ session('success') }}</p>
             </div>
@@ -26,10 +28,10 @@
             <div class="timeline" id="order-timeline">
                 @php
                     $steps = [
-                        ['key' => 'placed', 'label' => 'Placed', 'icon' => '📝'],
-                        ['key' => 'brewing', 'label' => 'Brewing', 'icon' => '🧋'],
-                        ['key' => 'out_for_delivery', 'label' => $order->fulfillment_type === 'pickup' ? 'Ready' : 'On the Way', 'icon' => $order->fulfillment_type === 'pickup' ? '✅' : '🚗'],
-                        ['key' => 'delivered', 'label' => 'Delivered', 'icon' => '🎉'],
+                        ['key' => 'placed', 'label' => 'Placed', 'icon' => 'clipboard'],
+                        ['key' => 'brewing', 'label' => 'Brewing', 'icon' => 'boba'],
+                        ['key' => 'out_for_delivery', 'label' => $order->fulfillment_type === 'pickup' ? 'Ready' : 'On the Way', 'icon' => $order->fulfillment_type === 'pickup' ? 'check-circle' : 'car'],
+                        ['key' => 'delivered', 'label' => 'Delivered', 'icon' => 'party'],
                     ];
                     $currentStep = $order->status_step;
                 @endphp
@@ -42,7 +44,7 @@
                             @if($index < $currentStep)
                                 <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
                             @elseif($index === $currentStep)
-                                <span class="text-xs">{{ $step['icon'] }}</span>
+                                <x-icon :name="$step['icon']" class="w-3.5 h-3.5 text-white" />
                             @endif
                         </div>
                         <span class="timeline-label {{ $index <= $currentStep ? 'active' : '' }}">{{ $step['label'] }}</span>
@@ -58,7 +60,9 @@
                 @foreach($order->items as $item)
                     <div class="flex items-center justify-between py-3 {{ !$loop->last ? 'border-b border-cream-100' : '' }}">
                         <div class="flex items-center gap-3">
-                            <span class="w-10 h-10 rounded-xl bg-lavender-50 flex items-center justify-center text-lg">🧋</span>
+                            <span class="w-10 h-10 rounded-xl bg-lavender-50 flex items-center justify-center">
+                                <x-icon name="boba" class="w-5 h-5 text-lavender-400" />
+                            </span>
                             <div>
                                 <p class="font-semibold text-sm text-gray-900">{{ $item->product_name }}</p>
                                 @if($item->customizations->isNotEmpty())

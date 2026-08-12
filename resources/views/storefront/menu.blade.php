@@ -29,7 +29,9 @@
         {{-- Products Grid --}}
         @if($products->isEmpty())
             <div class="text-center py-20">
-                <span class="text-6xl mb-4 block">🍵</span>
+                <div class="w-16 h-16 rounded-2xl bg-lavender-50 flex items-center justify-center mx-auto mb-4">
+                    <x-icon name="boba" class="w-8 h-8 text-lavender-400" />
+                </div>
                 <h3 class="font-display font-bold text-xl text-gray-700 mb-2">No drinks found</h3>
                 <p class="text-gray-500">Check back soon for new flavors!</p>
             </div>

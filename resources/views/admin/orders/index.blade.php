@@ -71,7 +71,11 @@
                             </td>
                             <td class="px-5 py-4">
                                 <span class="inline-flex items-center gap-1 text-xs font-medium text-gray-600">
-                                    {{ $order->fulfillment_type === 'delivery' ? '🚗' : '🏪' }}
+                                    @if($order->fulfillment_type === 'delivery')
+                                        <x-icon name="car" class="w-3.5 h-3.5" />
+                                    @else
+                                        <x-icon name="store" class="w-3.5 h-3.5" />
+                                    @endif
                                     {{ ucfirst($order->fulfillment_type) }}
                                 </span>
                             </td>
@@ -100,7 +104,9 @@
                     @empty
                         <tr>
                             <td colspan="8" class="px-5 py-16 text-center">
-                                <span class="text-4xl block mb-3">📋</span>
+                                <div class="w-14 h-14 rounded-xl bg-lavender-50 flex items-center justify-center mx-auto mb-3">
+                                    <x-icon name="clipboard" class="w-7 h-7 text-lavender-400" />
+                                </div>
                                 <p class="text-gray-500">No orders found.</p>
                             </td>
                         </tr>

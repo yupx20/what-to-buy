@@ -10,7 +10,7 @@
         @if(empty($cartItems))
             <div class="text-center py-20">
                 <div class="w-24 h-24 rounded-3xl bg-lavender-50 flex items-center justify-center mx-auto mb-6">
-                    <span class="text-5xl">🛒</span>
+                    <x-icon name="cart-empty" class="w-12 h-12 text-lavender-400" />
                 </div>
                 <h3 class="font-display font-bold text-xl text-gray-700 mb-2">Your cart is empty</h3>
                 <p class="text-gray-500 mb-6">Looks like you haven't added any drinks yet.</p>
@@ -27,7 +27,7 @@
                                     @if(!empty($item['product_image']))
                                         <img src="{{ asset('storage/' . $item['product_image']) }}" alt="{{ $item['product_name'] }}" class="w-full h-full object-cover rounded-2xl">
                                     @else
-                                        <span class="text-3xl">🧋</span>
+                                        <x-icon name="boba" class="w-8 h-8 text-lavender-300" />
                                     @endif
                                 </div>
                                 <div class="flex-1 min-w-0">

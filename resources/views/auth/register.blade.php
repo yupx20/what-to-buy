@@ -7,7 +7,7 @@
     <div class="max-w-md mx-auto px-4">
         <div class="text-center mb-8">
             <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-lavender-500 to-lavender-600 flex items-center justify-center mx-auto mb-4 shadow-lg shadow-lavender-500/25">
-                <span class="text-3xl">🧋</span>
+                <x-icon name="boba" class="w-8 h-8 text-lavender-500" />
             </div>
             <h1 class="font-display font-extrabold text-3xl text-gray-900 mb-2">Join What to Buy</h1>
             <p class="text-gray-500">Create an account to start ordering</p>

@@ -3,12 +3,12 @@
 <div class="card-boba group cursor-pointer" data-product-id="{{ $product->id }}">
     {{-- Product Image --}}
     <div class="relative overflow-hidden aspect-square bg-gradient-to-br from-lavender-50 to-cream-100">
-        @if($product->image_path)
-            <img src="{{ asset('storage/' . $product->image_path) }}" alt="{{ $product->name }}"
+        @if($product->image_url)
+            <img src="{{ $product->image_url }}" alt="{{ $product->name }}"
                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
         @else
             <div class="w-full h-full flex items-center justify-center">
-                <span class="text-6xl">🧋</span>
+                <x-icon name="boba" class="w-16 h-16 text-lavender-300" />
             </div>
         @endif
 

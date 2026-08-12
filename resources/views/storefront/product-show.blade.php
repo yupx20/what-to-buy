@@ -10,10 +10,10 @@
             {{-- Product Image --}}
             <div class="relative">
                 <div class="aspect-square rounded-boba bg-gradient-to-br from-lavender-50 to-cream-100 flex items-center justify-center overflow-hidden shadow-boba">
-                    @if($product->image_path)
-                        <img src="{{ asset('storage/' . $product->image_path) }}" alt="{{ $product->name }}" class="w-full h-full object-cover">
+                    @if($product->image_url)
+                        <img src="{{ $product->image_url }}" alt="{{ $product->name }}" class="w-full h-full object-cover">
                     @else
-                        <span class="text-[8rem]">🧋</span>
+                        <x-icon name="boba" class="w-32 h-32 text-lavender-300" />
                     @endif
                 </div>
                 @if($product->badge_tag)

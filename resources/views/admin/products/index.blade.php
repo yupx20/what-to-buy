@@ -8,7 +8,7 @@
     @if($lowStockProducts->isNotEmpty())
         <div class="bg-amber-50 border border-amber-200 rounded-xl p-4">
             <div class="flex items-center gap-3">
-                <span class="text-xl">⚠️</span>
+                <x-icon name="alert-triangle" class="w-5 h-5 text-amber-500" />
                 <div>
                     <p class="font-semibold text-amber-800 text-sm">Low Stock Alert</p>
                     <p class="text-xs text-amber-600">
@@ -57,10 +57,10 @@
                                 <div class="flex items-center gap-3">
                                     <div class="w-10 h-10 rounded-xl bg-lavender-50 flex items-center justify-center text-lg flex-shrink-0">
                                         @if($product->image_path)
-                                            <img src="{{ asset('storage/' . $product->image_path) }}" alt="" class="w-full h-full object-cover rounded-xl">
-                                        @else
-                                            🧋
-                                        @endif
+                                        <img src="{{ $product->image_url }}" alt="" class="w-full h-full object-cover rounded-xl">
+                                    @else
+                                        <x-icon name="boba" class="w-5 h-5 text-lavender-300" />
+                                    @endif
                                     </div>
                                     <span class="font-semibold text-gray-900">{{ $product->name }}</span>
                                 </div>

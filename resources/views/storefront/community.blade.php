@@ -71,7 +71,9 @@
         {{-- Reviews Grid --}}
         @if($testimonies->isEmpty())
             <div class="text-center py-16">
-                <span class="text-6xl block mb-4">💬</span>
+                <div class="w-16 h-16 rounded-2xl bg-lavender-50 flex items-center justify-center mx-auto mb-4">
+                    <x-icon name="chat" class="w-8 h-8 text-lavender-400" />
+                </div>
                 <h3 class="font-display font-bold text-xl text-gray-700 mb-2">No reviews yet</h3>
                 <p class="text-gray-500">Be the first to share your experience!</p>
             </div>

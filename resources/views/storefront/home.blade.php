@@ -35,14 +35,14 @@
                 <div class="relative">
                     <div class="absolute -inset-4 bg-gradient-to-br from-lavender-200/40 to-strawberry-200/40 rounded-[3rem] blur-2xl"></div>
                     <div class="relative w-72 h-72 lg:w-96 lg:h-96 rounded-[3rem] bg-gradient-to-br from-lavender-100 to-cream-100 flex items-center justify-center shadow-2xl">
-                        <span class="text-9xl lg:text-[10rem] animate-float select-none">🧋</span>
+                        <x-icon name="boba" class="w-40 h-40 lg:w-52 lg:h-52 text-lavender-400 animate-float" />
                     </div>
                     {{-- Floating decorative elements --}}
                     <div class="absolute -top-6 -right-6 w-16 h-16 rounded-2xl bg-strawberry-100 flex items-center justify-center shadow-lg animate-float" style="animation-delay: 0.5s;">
-                        <span class="text-2xl">🫧</span>
+                        <x-icon name="bubbles" class="w-8 h-8 text-strawberry-400" />
                     </div>
                     <div class="absolute -bottom-4 -left-4 w-14 h-14 rounded-2xl bg-matcha-100 flex items-center justify-center shadow-lg animate-float" style="animation-delay: 1s;">
-                        <span class="text-2xl">🍵</span>
+                        <x-icon name="leaf" class="w-7 h-7 text-matcha-500" />
                     </div>
                 </div>
             </div>
@@ -90,15 +90,15 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
             @php
                 $steps = [
-                    ['icon' => '🔍', 'title' => 'Choose Your Drink', 'desc' => 'Browse our curated menu of premium boba and milk tea creations.'],
-                    ['icon' => '✨', 'title' => 'Customize It', 'desc' => 'Pick your ice level, sweetness, and up to 3 delicious toppings.'],
-                    ['icon' => '🚀', 'title' => 'Get It Fast', 'desc' => 'Pick up in store or get it delivered right to your door.'],
+                    ['icon' => 'search', 'title' => 'Choose Your Drink', 'desc' => 'Browse our curated menu of premium boba and milk tea creations.'],
+                    ['icon' => 'sparkle', 'title' => 'Customize It', 'desc' => 'Pick your ice level, sweetness, and up to 3 delicious toppings.'],
+                    ['icon' => 'delivery', 'title' => 'Get It Fast', 'desc' => 'Pick up in store or get it delivered right to your door.'],
                 ];
             @endphp
             @foreach($steps as $index => $step)
                 <div class="text-center">
                     <div class="w-20 h-20 rounded-3xl bg-white shadow-boba mx-auto mb-6 flex items-center justify-center">
-                        <span class="text-4xl">{{ $step['icon'] }}</span>
+                        <x-icon :name="$step['icon']" class="w-9 h-9 text-lavender-500" />
                     </div>
                     <div class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-lavender-100 text-lavender-600 font-display font-bold text-sm mb-3">{{ $index + 1 }}</div>
                     <h3 class="font-display font-bold text-lg text-gray-900 mb-2">{{ $step['title'] }}</h3>
