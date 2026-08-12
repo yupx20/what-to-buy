@@ -59,6 +59,27 @@ class Product extends Model
     }
 
     /**
+     * Get the resolved image URL.
+     * Handles both public/images/ paths and storage uploads.
+     */
+    protected function imageUrl(): Attribute
+    {
+        return Attribute::get(function () {
+            if (!$this->image_path) {
+                return null;
+            }
+
+            // Public images (e.g., seeded product photos in public/images/)
+            if (str_starts_with($this->image_path, 'images/')) {
+                return asset($this->image_path);
+            }
+
+            // Storage uploads (e.g., admin-uploaded via products/ disk)
+            return asset('storage/' . $this->image_path);
+        });
+    }
+
+    /**
      * Get the display badge text.
      */
     protected function badgeText(): Attribute
