@@ -147,6 +147,7 @@ class ProductSeeder extends Seeder
         foreach ($products as $product) {
             Product::create(array_merge($product, [
                 'is_in_stock' => $product['stock_quantity'] > 0,
+                'image_path' => 'images/products/' . $product['slug'] . '.jpg',
             ]));
         }
     }
