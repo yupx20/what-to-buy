@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://img.shields.io/badge/🧋_What_to_Buy-Boutique_Boba_&_Milk_Tea-8a76d1?style=for-the-badge&labelColor=1e1832" alt="What to Buy">
+  <img src="https://img.shields.io/badge/What_to_Buy-Boutique_Boba_&_Milk_Tea-8a76d1?style=for-the-badge&labelColor=1e1832" alt="What to Buy">
 </p>
 
 <p align="center">
@@ -17,9 +17,9 @@
 
 ---
 
-## ✨ Features
+## Features
 
-### 🛒 Customer Storefront
+### Customer Storefront
 
 | Feature | Description |
 |---|---|
@@ -31,7 +31,7 @@
 | **Community Reviews** | Customer-submitted ratings and reviews with admin approval workflow |
 | **Auth System** | Registration, login, logout with role-based access control |
 
-### 🏗️ Admin Dashboard
+### Admin Dashboard
 
 | Feature | Description |
 |---|---|
@@ -42,7 +42,7 @@
 
 ---
 
-## 🎨 Design System — "Boba Pop"
+## Design System — "Boba Pop"
 
 | Token | Value | Usage |
 |---|---|---|
@@ -58,7 +58,7 @@
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Layer | Technology |
 |---|---|
@@ -71,7 +71,7 @@
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 what-to-buy/
@@ -118,7 +118,7 @@ what-to-buy/
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -169,7 +169,7 @@ Visit **http://localhost:8000** to see the storefront.
 
 ---
 
-## 🔑 Demo Accounts
+## Demo Accounts
 
 | Role | Email | Password |
 |---|---|---|
@@ -180,7 +180,7 @@ Visit **http://localhost:8000** to see the storefront.
 
 ---
 
-## 📦 Seeded Demo Data
+## Seeded Demo Data
 
 | Entity | Count | Details |
 |---|---|---|
@@ -192,7 +192,7 @@ Visit **http://localhost:8000** to see the storefront.
 
 ---
 
-## 🗺️ Route Map
+## Route Map
 
 ### Customer Routes
 
@@ -238,7 +238,7 @@ Visit **http://localhost:8000** to see the storefront.
 
 ---
 
-## 🏛️ Architecture Decisions
+## Architecture Decisions
 
 ### Service Layer Pattern
 Business logic is encapsulated in `app/Services/`, not controllers. Controllers handle HTTP concerns only (request parsing, response formatting). This keeps controllers thin and logic reusable.
@@ -263,7 +263,7 @@ KPI metrics are cached for 5 minutes via `DashboardService::getMetrics()`. Cache
 
 ---
 
-## 🚢 Deployment Guide
+## Deployment Guide
 
 ### Environment Variables
 
@@ -314,7 +314,7 @@ php artisan storage:link
 
 ---
 
-## 🧪 Testing
+## Testing
 
 ```bash
 # Run the test suite
@@ -326,6 +326,6 @@ php artisan test
 
 ---
 
-## 📄 License
+## License
 
 This project is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
