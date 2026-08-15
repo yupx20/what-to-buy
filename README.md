@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://img.shields.io/badge/What_to_Buy-8a76d1?style=for-the-badge&labelColor=1e1832" alt="What to Buy">
+  <img src="https://img.shields.io/badge/What_to_Buy-8a76d1?style=for-the-badge&labelColor=1e1832" alt="What to Buy" width="200">
 </p>
 
 <p align="center">
