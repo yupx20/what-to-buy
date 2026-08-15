@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://img.shields.io/badge/What_to_Buy-Boutique_Boba_&_Milk_Tea-8a76d1?style=for-the-badge&labelColor=1e1832" alt="What to Buy">
+  <img src="https://img.shields.io/badge/What_to_Buy-8a76d1?style=for-the-badge&labelColor=1e1832" alt="What to Buy">
 </p>
 
 <p align="center">
@@ -66,7 +66,7 @@
 | **Frontend** | Blade Templates, Vanilla JavaScript |
 | **Styling** | Tailwind CSS 4, Custom CSS Component Library |
 | **Build Tool** | Vite 8 |
-| **Database** | SQLite (dev) / MySQL or PostgreSQL (prod) |
+| **Database** | PostgreSQL |
 | **Testing** | Pest PHP 5 |
 
 ---
@@ -144,7 +144,6 @@ cp .env.example .env
 php artisan key:generate
 
 # 5. Create database & seed demo data
-touch database/database.sqlite   # Only for SQLite
 php artisan migrate --seed
 
 # 6. Create storage symlink (for uploaded images)
@@ -272,10 +271,10 @@ APP_ENV=production
 APP_DEBUG=false
 APP_URL=https://your-domain.com
 
-DB_CONNECTION=mysql           # or pgsql
+DB_CONNECTION=pgsql
 DB_HOST=your-db-host
-DB_PORT=3306
-DB_DATABASE=what_to_buy
+DB_PORT=5432
+DB_DATABASE=your_database
 DB_USERNAME=your_user
 DB_PASSWORD=your_password
 
@@ -306,7 +305,7 @@ php artisan storage:link
 
 ### Scaling Considerations
 
-- **Database**: Use MySQL 8+ or PostgreSQL 15+ with read replicas for high traffic
+- **Database**: Use PostgreSQL 15+ with read replicas for high traffic
 - **Sessions**: Use Redis to enable horizontal scaling across multiple servers
 - **File Storage**: Use S3 or similar cloud storage for product images (`FILESYSTEM_DISK=s3`)
 - **Queue**: Use Redis + Horizon for background job processing (email notifications, etc.)
